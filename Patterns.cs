@@ -10,10 +10,10 @@ namespace RegxDemo
 {
     public class Patterns
     {
-        public  String REGX_FNAME = "^[A-Z]{1}[A-Z a-z]{2,3}$";
-        public bool boolvalidate(string Lname)
+        public String REGX_EMAIL = "^[a-zA-Z0-9]+[a-zA-z.]*@[a-zA-Z0-9]+[.]+[a-zA-z]+[.a-zA-z]*$";
+        public bool boolvalidate(string email)
         {
-            return Regex.IsMatch(Lname, REGX_FNAME);
+            return Regex.IsMatch(email, REGX_EMAIL);
         }
     }
 }
