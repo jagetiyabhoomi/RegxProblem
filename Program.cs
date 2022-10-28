@@ -4,18 +4,18 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Please enter the First Name: ");
-            string Fname = Console.ReadLine();
+            Console.WriteLine("Please enter the Last Name: ");
+            string Lname = Console.ReadLine();
             Patterns patterns = new Patterns();
-            bool val= patterns.boolvalidate(Fname);
+            bool val= patterns.boolvalidate(Lname);
             if(val)
             {
-                Console.WriteLine("Valid Fname");
+                Console.WriteLine("Valid Lname");
 
              }
             else
             {
-                Console.WriteLine("Invalid Fname");
+                Console.WriteLine("Invalid Lname");
             }
         }
     }
