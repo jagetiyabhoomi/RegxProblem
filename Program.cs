@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Please enter the Password: ");
             string pass = Console.ReadLine();
-            Console.WriteLine("Rule 2");
+            Console.WriteLine("Rule 3");
             Patterns patterns = new Patterns();
             bool val= patterns.boolvalidate(pass);
             if(val)
