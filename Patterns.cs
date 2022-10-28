@@ -10,10 +10,10 @@ namespace RegxDemo
 {
     public class Patterns
     {
-        public String REGX_EMAIL = "^[a-zA-Z0-9]+[a-zA-z.]*@[a-zA-Z0-9]+[.]+[a-zA-z]+[.a-zA-z]*$";
-        public bool boolvalidate(string email)
+        public String REGX_PHONE = "^91( )+[7-9]{1}?[0-9]{9}?$";
+        public bool boolvalidate(string phone)
         {
-            return Regex.IsMatch(email, REGX_EMAIL);
+            return Regex.IsMatch(phone, REGX_PHONE);
         }
     }
 }
