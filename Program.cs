@@ -4,18 +4,19 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Please enter the Phone number: ");
-            string ph = Console.ReadLine();
+            Console.WriteLine("Please enter the Password: ");
+            string pass = Console.ReadLine();
+            Console.WriteLine("Rule 1");
             Patterns patterns = new Patterns();
-            bool val= patterns.boolvalidate(ph);
+            bool val= patterns.boolvalidate(pass);
             if(val)
             {
-                Console.WriteLine("Valid phone number");
+                Console.WriteLine("Valid password");
 
              }
             else
             {
-                Console.WriteLine("Invalid phone number");
+                Console.WriteLine("Invalid password");
             }
         }
     }
