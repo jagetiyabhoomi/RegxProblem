@@ -10,10 +10,10 @@ namespace RegxDemo
 {
     public class Patterns
     {
-        public String REGX_PASS = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*#?&])[a-zA-Z0-9@$!%*#?&]{8,}$";
-        public bool boolvalidate(string pass)
+        public String REGX_EMAIL = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
+        public bool boolvalidate(string email)
         {
-            return Regex.IsMatch(pass, REGX_PASS);
+            return Regex.IsMatch(email, REGX_EMAIL);
         }
     }
 }
