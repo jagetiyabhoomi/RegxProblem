@@ -10,7 +10,7 @@ namespace RegxDemo
 {
     public class Patterns
     {
-        public String REGX_PASS = "^[a-zA-Z0-9]{8,}$";
+        public String REGX_PASS = "^(?=.*[A-Z])[a-zA-Z0-9]{8,}$";
         public bool boolvalidate(string pass)
         {
             return Regex.IsMatch(pass, REGX_PASS);
