@@ -10,10 +10,10 @@ namespace RegxDemo
 {
     public class Patterns
     {
-        public String REGX_PHONE = "^91( )+[7-9]{1}?[0-9]{9}?$";
-        public bool boolvalidate(string phone)
+        public String REGX_PASS = "^[a-zA-Z0-9]{8,}$";
+        public bool boolvalidate(string pass)
         {
-            return Regex.IsMatch(phone, REGX_PHONE);
+            return Regex.IsMatch(pass, REGX_PASS);
         }
     }
 }
