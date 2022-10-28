@@ -11,9 +11,9 @@ namespace RegxDemo
     public class Patterns
     {
         public  String REGX_FNAME = "^[A-Z]{1}[A-Z a-z]{2,3}$";
-        public bool boolvalidate(string Fname)
+        public bool boolvalidate(string Lname)
         {
-            return Regex.IsMatch(Fname, REGX_FNAME);
+            return Regex.IsMatch(Lname, REGX_FNAME);
         }
     }
 }
