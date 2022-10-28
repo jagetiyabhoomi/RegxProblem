@@ -4,18 +4,18 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Please enter the Email Address: ");
-            string email = Console.ReadLine();
+            Console.WriteLine("Please enter the Phone number: ");
+            string ph = Console.ReadLine();
             Patterns patterns = new Patterns();
-            bool val= patterns.boolvalidate(email);
+            bool val= patterns.boolvalidate(ph);
             if(val)
             {
-                Console.WriteLine("Valid email address");
+                Console.WriteLine("Valid phone number");
 
              }
             else
             {
-                Console.WriteLine("Invalid email address");
+                Console.WriteLine("Invalid phone number");
             }
         }
     }
