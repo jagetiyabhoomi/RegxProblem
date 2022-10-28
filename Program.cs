@@ -4,19 +4,19 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Please enter the Password: ");
-            string pass = Console.ReadLine();
-            Console.WriteLine("Rule 4");
+            Console.WriteLine("Please enter the Email: ");
+            string email = Console.ReadLine();
+            //Console.WriteLine("Rule 4");
             Patterns patterns = new Patterns();
-            bool val= patterns.boolvalidate(pass);
+            bool val= patterns.boolvalidate(email);
             if(val)
             {
-                Console.WriteLine("Valid password");
+                Console.WriteLine("Valid Email");
 
              }
             else
             {
-                Console.WriteLine("Invalid password");
+                Console.WriteLine("Invalid Email");
             }
         }
     }
